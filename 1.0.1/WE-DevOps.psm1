@@ -1,0 +1,14 @@
+﻿. $psScriptRoot\functions\Test-Administrator.ps1
+. $psScriptRoot\functions\Get-WEDisk.ps1
+. $psScriptRoot\functions\Get-WEClientDB.ps1
+. $psScriptRoot\functions\Get-WESqlCommandStatus.ps1
+. $psScriptRoot\functions\Get-WESqlStatus.ps1
+. $psScriptRoot\functions\Restore-WESqlLastBackup.ps1
+. $psScriptRoot\functions\Start-WESqlBackup.ps1
+. $psScriptRoot\functions\Start-WESqlRestore.ps1
+. $psScriptRoot\functions\Copy-WESqlLastBackup.ps1
+. $psScriptRoot\functions\Start-WEGui.ps1
+. $psScriptRoot\functions\Get-WESQLBackup.ps1
+. $psScriptRoot\functions\Copy-WESqlBackup.ps1
+. $psScriptRoot\functions\Get-WESqlBackupStatus.ps1
+. $psScriptRoot\functions\Start-JenkinsDownloadBackups.ps1
