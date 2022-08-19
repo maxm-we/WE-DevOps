@@ -12,10 +12,13 @@ jobs:
     runs-on: ubuntu-latest
     # https://github.com/marketplace/actions/s3-sync 
     steps:
-      - uses: montudor/action-zip@v1
-        with:
-          args: zip -qq -r WE-DevOps.zip .
       - uses: actions/checkout@master
+      - name: Archive Release
+        uses: thedoctor0/zip-release@main
+        with:
+          type: 'zip'
+          filename: 'WE-DevOps.zip'
+          exclusions: '*.git* *.github*'
       - uses: jakejarvis/s3-sync-action@master
         env:
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
