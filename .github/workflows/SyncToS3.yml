@@ -19,7 +19,7 @@ jobs:
           type: 'zip'
           filename: 'WE-DevOps.zip'
           exclusions: '*.git* *.github*'
-      - uses: jakejarvis/s3-sync-action@master
+      - uses: maxm-we/s3-sync-action@master
         env:
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
